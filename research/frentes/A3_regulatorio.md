@@ -181,7 +181,7 @@ Otros PSAV potencialmente relevantes como socios (inscriptos con las 5 actividad
 ## 5. ¿Puede la mera promoción/publicidad ser oferta pública? ¿Qué puede hacer un portal informativo?
 
 1. **Texto legal:** oferta pública = "invitación" a personas en general o grupos "para realizar cualquier acto jurídico con valores negociables", efectuada "por los emisores, por sus tenedores o por organizaciones [...] dedicadas en forma exclusiva o parcial al comercio de aquéllos", por "medios electrónicos [...] redes sociales [...] o cualquier otro procedimiento de difusión" (Ley 26.831 art. 2). [A][H]
-2. **Quién puede hacerla:** emisores y agentes registrados autorizados (art. 82). Agente productor = "difusión y promoción de valores negociables bajo responsabilidad de un agente registrado" (art. 2) → la promoción sistemática de VN tiene una categoría registral propia. [A][H] Inferencia: un tercero no registrado que promociona ofertas concretas de VN a cambio de comisión de éxito se acerca a la figura de AP/colocador. [B][I]
+2. **Quién puede hacerla:** emisores y agentes registrados autorizados (art. 82). Agente productor = "difusión y promoción de valores negociables bajo responsabilidad de un agente registrado" (art. 2), desarrollado en NT Tít. VII Cap. V art. 2 (promoción de VN autorizados, captación de clientes para AN/ALyC/AAGI bajo convenio) → la promoción sistemática de VN tiene una categoría registral propia. [A][H] Inferencia: un tercero no registrado que promociona ofertas concretas de VN a cambio de comisión de éxito se acerca a la figura de AP/colocador. [B][I]
 3. **Publicidad:** arts. 112-115 alcanzan "a toda publicidad encargada por [...] cualquier otra persona", excluyendo notas periodísticas (art. 115). [A][H]
 4. **Oferta privada:** la "Publicidad Web Dirigida a Residentes" es medio prohibido para el puerto seguro (Tít. XX art. 3); se admite web/redes **con acceso restringido** (art. 2.5) y con límites de inversores (art. 4). Un portal abierto que difunde ofertas privadas probablemente rompe el puerto seguro. [A][H] + [M][I]
 5. **PSAV:** la difusión por quien promociona a un PSAV no puede mezclar actividades de mercado de capitales (RG 1172 art. 33), y el referenciador debe "limitarse a redireccionar" sin tocar órdenes, con convenio informado a CNV (art. 35). [A][H]
@@ -203,5 +203,4 @@ Otros PSAV potencialmente relevantes como socios (inscriptos con las 5 actividad
 - Leer texto oficial de Ley 27.739 (arts. 4, 14, 37, 38) y Código Penal en materia de intermediación/oferta no autorizada.
 - Consultar registro CNV de Agentes (PFC/ALyC/AP) por CUIT de Crowdium, Trustoken, BrickFlow y CFA (con autorización humana para usar el buscador).
 - Verificar vigencia/modificaciones de Res. UIF 49/2024 y 78/2023 en el sitio de la UIF.
-- Leer NT Tít. XI (PLA/FT CNV), Tít. VI Cap. IV (colocación), Tít. VII (agentes, AP, referenciamiento de ALyC), Tít. XIV Cap. II (Hub/sandbox).
-- Definición normativa de ACVN vigente.
+- Leer NT Tít. XI (PLA/FT CNV), Tít. VI Cap. IV (colocación), Tít. VII Cap. II (ALyC) y Cap. VII (disposiciones comunes, art. 20 y 29 citados por el AP), Tít. XIV Cap. II (Hub/sandbox).
