@@ -46,7 +46,7 @@ params = [
     ("monto", "Monto medio colocado por campaña", "USD", 150000, 400000, 1000000, "SUPUESTO", "Tope PFC UVA 1,5M ≈ USD 2,14M por proyecto/12 meses (E5009, DATO)."),
     ("take_em", "Comisión de éxito al emisor (M2)", "% del monto", 0.04, 0.06, 0.08, "SUPUESTO", "Ancla internacional 6–7,9% (Wefunder E5001, Republic E5003)."),
     ("fee_inv", "Fee al inversor (M2)", "% del monto", 0.0, 0.01, 0.02, "SUPUESTO", "Ancla internacional 2–3,5% (E5002, E5005)."),
-    ("ticket", "Ticket medio por suscripción", "USD", 300, 800, 2000, "SUPUESTO", "Tope RG 1125: UVA 3.000 por emisión (≈USD 4.300, E5011, sujeto del tope a confirmar)."),
+    ("ticket", "Ticket medio por suscripción", "USD", 300, 800, 2000, "SUPUESTO", "Tope RG 1125 por inversor: UVA 3.000 por emisión (≈USD 4.300) y UVA 10.000 total (art. 148, E9005)."),
     ("recurr", "Suscripciones por inversor activo por año", "n", 1, 2, 4, "SUPUESTO", "Sin ancla."),
     ("cac_inv", "CAC por inversor activo", "USD", 2000, 267, 50, "SUPUESTO", "Derivado de CAC registro 100/40/15 ÷ conversión 5/15/30% (A5 §2.6). Sin benchmark primario."),
     ("kyc", "Costo KYC por inversor", "USD", 1.9, 1.4, 0.8, "DATO", "Sumsub/Veriff precios públicos (E5018, E5019)."),
@@ -59,6 +59,7 @@ params = [
     ("fijo_m2", "Costo fijo anual M2 (equipo, compliance, tecnología, tasas)", "USD/año", 600000, 350000, 200000, "SUPUESTO", "Incluye tasa CNV si aplica (PSAV PJ ARS 13,36M ≈ USD 8.821, E5013)."),
     ("fee_orig", "Fee de originación cobrado al operador/emisor (M1)", "% del monto", 0.015, 0.025, 0.035, "SUPUESTO", "Sin ancla local. Licitud: HIPÓTESIS PARA ABOGADO (ver 11)."),
     ("fee_prep", "Fee fijo de preparación de legajo por emisor (M1)", "USD", 2000, 4000, 6000, "SUPUESTO", "Sin ancla. Ref. briq.mx cobra dictamen legal MXN 17.000 (A2)."),
+    ("coloc_op", "Comisión de colocación del operador autorizado (M1, la paga el emisor)", "% del monto", 0.02, 0.02, 0.02, "SUPUESTO", "Sin tarifa pública. Ref. colocación FF Total Assets V 0,89% (E5016) y ON Vitalcan ~1% (E8003)."),
     ("fijo_m1", "Costo fijo anual M1 (equipo chico, sin captación)", "USD/año", 250000, 150000, 90000, "SUPUESTO", "Sin fuente."),
 ]
 ROW = {}
@@ -153,7 +154,7 @@ m1_rows = [
     ("res_m", "Margen operativo", PCT, lambda S, M: f"=IF({M('ing_tot')}=0,0,{M('res')}/{M('ing_tot')})", "resultado ÷ ingresos"),
     ("mc_c", "Contribución por campaña", USD, lambda S, M: f"={S('monto')}*{S('fee_orig')}+{S('fee_prep')}-{S('cac_em')}-{S('dd')}-{S('monto')}*{S('prov')}/2", "monto×fee + prep − CAC − DD − provisión"),
     ("be_c", "Campañas de equilibrio", NUM, lambda S, M: f"=IF({M('mc_c')}<=0,\"NUNCA\",{S('fijo_m1')}/{M('mc_c')})", "fijo ÷ contribución por campaña"),
-    ("costo_em", "Costo total para el emisor (% del monto)", PCT, lambda S, M: f"=({S('fee_orig')}*{S('monto')}+{S('fee_prep')}+{S('estruct')})/{S('monto')}+{S('arancel_cnv')}+0.02", "fee orig. + prep + estructuración + arancel + 2% colocación del operador (SUPUESTO)"),
+    ("costo_em", "Costo total para el emisor (% del monto)", PCT, lambda S, M: f"=({S('fee_orig')}*{S('monto')}+{S('fee_prep')}+{S('estruct')})/{S('monto')}+{S('arancel_cnv')}+{S('coloc_op')}", "fee orig. + prep + estructuración + arancel + colocación del operador"),
 ]
 build_model("Modelo_M1", m1_rows)
 

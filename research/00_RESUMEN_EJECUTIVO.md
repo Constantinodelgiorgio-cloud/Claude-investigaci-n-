@@ -28,7 +28,7 @@
   - Justoken (infraestructura, no figura como PSAV).
   - Casi todo lo que hay es **inmobiliario**.
 - **No tokenizados:**
-  - Crowdium: declara USD 13,8 M en 18 proyectos, con fideicomisos privados.
+  - Crowdium: declara USD 13,8 M en 18 proyectos, con fideicomisos privados (cifra propia, E1006).
   - MAV y SGR: cheques, pagarés y FCE.
 - **Sitios que solo muestran tecnología, sin ofertas verificables:** Trustoken, BrickFlow, Pala.
 - **Internacional:**
@@ -47,8 +47,8 @@
    - Una PFC no puede tener otras categorías y un agente registrado no puede ser PSAV.
    - El sandbox de tokenización vence el 31/12/2027.
 2. **Topes:**
-   - PFC: UVA 1,5 M por proyecto (≈USD 2,1 M).
-   - Minorista en el régimen RG 1125: UVA 3.000 por emisión (≈USD 4.300).
+   - PFC: UVA 1,5 M por proyecto (≈USD 2,1 M; E9009).
+   - Minorista en el régimen RG 1125: UVA 3.000 por emisión y por inversor (≈USD 4.300; art. 148, E9005).
 3. **Economía:** con supuestos base, el canal minorista tiene contribución **negativa** (CAC alto frente a tickets chicos).
 4. **Liquidez:** no hay evidencia de un secundario real en tokens RWA.
 5. **Confianza:** fraudes recientes (Generación Zoe, $LIBRA) y conflictos en fideicomisos inmobiliarios.

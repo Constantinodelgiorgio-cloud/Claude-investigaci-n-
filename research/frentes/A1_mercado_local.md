@@ -10,7 +10,7 @@
 ## 1. Respuesta corta
 
 - Sí hay **≥12 organizaciones** argentinas o con operación en Argentina vinculadas al tema: el mapa tiene 18. Pero **las que son realmente comparables** con un "marketplace de proyectos productivos tokenizados" con ofertas visibles para el público son **unas 6**: Metro Futuro, Raíz, Efaysto, Crowdium (sin token), Volsmart/Quality Home y Landtoken. El resto son infraestructura, distribución o sitios sin ofertas verificables.
-- **Casi todo es inmobiliario.** Lo único productivo no inmobiliario con emisión regulada es **agro/tierra (Landtoken I)**. No se encontró **ninguna ON pyme tokenizada ni ninguna emisión bajo la RG 1125 (crowdfunding automático)** al 19/10/2026 [S/I, E1038].
+- **Casi todo es inmobiliario.** Lo único productivo no inmobiliario con oferta pública autorizada por CNV según fuentes secundarias (E1016) es **agro/tierra (Landtoken I)**. No se encontró **ninguna ON pyme tokenizada ni ninguna emisión bajo la RG 1125 (crowdfunding automático)** al 19/10/2026 [S/I, E1038].
 - Hay **tres emisiones tokenizadas con oferta pública CNV identificadas** (todas fideicomisos financieros): Landtoken I (campos), Illa Belgrano I (residencial CABA) y Espacio Añelo (vivienda para petroleras). Las tres vienen de notas de estudios jurídicos que citan resoluciones CNV [S]. Hay que cotejarlas en la AIF.
 - El grueso del volumen "tokenizado" minorista corre **por fuera de la oferta pública**: fideicomisos privados o contratos, con o sin token. El inscripto ante la CNV, cuando existe, lo está **como PSAV**, y eso no habilita oferta pública. Metro Futuro y Efaysto lo dicen expresamente en sus sitios [V].
 
@@ -54,7 +54,7 @@ Quedan **fuera del mapa** por no ser proyectos productivos, aunque sí son RWA c
 | FF Illa Belgrano I | Residencial CABA (pozo) | RESFC-2026-23510 (08/04/2026) | USD 4.150.330 según Lexlatin (sin documento primario) | CFA, Arg Capital, Coruba, Volsmart | Autorizada. Estado actual no verificable |
 | FF Espacio Añelo | 20 UF alquiladas a petroleras | RESFC-2026-23599 (22/07/2026) | No informado | CFA, ARG Capital, Idero, Volsmart | Autorizada. Estado no verificable |
 
-**Por categoría (emisiones reguladas):** inmobiliario urbano 2 · agro/tierra 1 · pyme industrial/servicios **0** · energía **0** (Justoken menciona un activo de YPF Luz por USD 800 M, que es declaración comercial y no tiene oferta minorista identificada).
+**Por categoría (emisiones con oferta pública CNV, pendiente de cotejo en AIF):** inmobiliario urbano 2 · agro/tierra 1 · pyme industrial/servicios **0** · energía **0** (Justoken menciona un activo de YPF Luz por USD 800 M, que es declaración comercial y no tiene oferta minorista identificada).
 
 ### 3.3 Transacciones con evidencia
 - Hay documentación de terceros con montos para **Landtoken I** (estudio jurídico) y, con menos solidez, para **Illa Belgrano** (Lexlatin).
@@ -82,7 +82,7 @@ Quedan **fuera del mapa** por no ser proyectos productivos, aunque sí son RWA c
 | Actor | Vínculo CNV verificado | Observación |
 |---|---|---|
 | Metro Futuro SRL | PSAV N° 100 [V] | Solo intercambio y transferencia. **No** tiene registradas custodia ni "participación en oferta de emisor". Vende tokens propios igual |
-| VOL PRO SRL (Volsmart) | PSAV N° 85 [V] + FF autorizados [S] | El único tokenizador local con emisiones bajo sandbox CNV identificadas (2) |
+| VOL PRO SRL (Volsmart) | PSAV N° 85 [V] + FF autorizados [S] | Uno de al menos dos generadores locales de representaciones digitales con emisiones CNV identificadas (2); el otro es Tech Demeter/Justoken en Landtoken I (corrección A9 §5.9) |
 | Real World Assets S.A. (Efaysto) | PSAV N° 172 [V] | Alta muy reciente |
 | Building TOC S.A. (Token ByU) | PSAV N° 173 [V] | El sitio declara otra razón social y otro CUIT → **contradictorio** |
 | Allaria Digital / Moonbird (Ripio) / Caja Digital Assets (BYMA) / BTGT (Bitget) / Primary X | PSAV N° 132 / 36 / 86 / 168 / 170 [V] | Distribución e infraestructura |
@@ -97,7 +97,7 @@ Quedan **fuera del mapa** por no ser proyectos productivos, aunque sí son RWA c
 
 ## 6. Señales: qué problema existe y quién paga
 
-1. **Hay oferta de desarrolladores inmobiliarios que buscan fondeo minorista en USD.** Crowdium muestra ~20 proyectos fondeados de USD 0,3–2,5 M cada uno (promedio declarado ~USD 0,77 M). Es la mejor evidencia local de que existe demanda minorista por ticket bajo y de que **el desarrollador paga**: margen o fee de estructuración y administración. **Para eso no hizo falta token.**
+1. **Hay oferta de desarrolladores inmobiliarios que buscan fondeo minorista en USD.** Crowdium muestra 18 proyectos fondeados (E1006) de USD 0,3–2,5 M cada uno (promedio declarado ~USD 0,77 M). Es la mejor evidencia local de que existe demanda minorista por ticket bajo y de que **el desarrollador paga**: margen o fee de estructuración y administración. **Para eso no hizo falta token.**
 2. **El token aparece como canal de distribución, no como necesidad del activo.** Landtoken I se colocó a la vez por siete ALyC y por un exchange (Ripio). Lo tokenizado amplía el alcance, pero la emisión es un FF clásico con fiduciario y ALyC. **Quien paga** es el emisor/organizador (fees de fiduciario, colocación, tokenización y PSAV). Según prensa de 2024, Landtoken cobraba al inversor 2–3,5% de entrada, 5% de la renta y 0,75% a la salida [S, baja].
 3. **La liquidez prometida no se demuestra.** Raíz promete salir en 48 h, pero su disclaimer dice que "no existe un mercado público" para sus tokens. Metro Futuro ofrece P2P "sujeto a demanda". **No hay evidencia de mercado secundario profundo.**
 4. **Las pymes no inmobiliarias ya tienen un canal masivo sin token.** El MAV negoció ~ARS 16,8 billones en cheques, pagarés y FCE en el primer semestre de 2026 [S]. Un marketplace de "proyectos productivos" compite con ese canal en costo y velocidad.

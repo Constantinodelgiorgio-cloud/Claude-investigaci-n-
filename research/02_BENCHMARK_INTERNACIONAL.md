@@ -170,7 +170,7 @@ Son patrones de negocio y producto, no normas.
 8. **Publicar métricas auditables.** Las cifras de marketing son contradictorias (StartEngine con 1M a 2,4M de usuarios, Wefunder) o no definidas ("reentels", TTV). Un diferencial argentino posible es reportar a la vista tasas de default, campañas fallidas y pagos efectuados por proyecto, al estilo del desglose de briq: 595 pagadas y 418 vigentes.
 9. **Liquidez secundaria marginal.** Las ventas P2P restringidas (Reental) y los secundarios con costos de ~8,5% ida y vuelta (StartEngine [S]) muestran que prometer liquidez es riesgoso. Coincide con la cautela sobre M3.
 10. **Las sanciones vinieron por marketing y límites, no por tecnología.** Las multas FINRA a Wefunder y StartEngine fueron por superar topes, comunicaciones engañosas y contenido de emisores no controlado. Un portal M0/M1 en Argentina necesita control editorial de lo que publica el emisor. A3 debe definir si eso lo hace "promoción" regulada.
-11. **Las plataformas se cancelan.** En Brasil, 48 de 154 registros de crowdfunding en la CVM están cancelados (~31%) (E2031). La tasa de mortalidad debe entrar en los kill criteria de A8.
+11. **Las plataformas se cancelan.** En Brasil, 48 de 154 registros de crowdfunding en la CVM están cancelados: 31% de 154, o 35% de las 137 que alguna vez obtuvieron registro (E2031, E9018). La tasa de mortalidad debe entrar en los kill criteria de A8.
 
 ## 4. Lo que NO es transferible
 

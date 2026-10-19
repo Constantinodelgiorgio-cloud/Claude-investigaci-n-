@@ -11,8 +11,8 @@
 
 H0 **no queda falsada del todo**, pero queda **seriamente debilitada en su formulación actual**. Los resultados son estos:
 
-1. **El problema "de distribución" no está demostrado.** La distribución minorista masiva ya existe: 12,3 millones de personas tienen cuenta comitente y unas 1,09 millones de cuentas operan cada mes [H, E8004]. Además, en 2025 las PyMEs captaron entre USD 10.212 y 10.480 millones en el mercado de capitales con instrumentos convencionales [H/D, E8001, E8002]. Si hay un problema, parece estar en la **originación y la calidad crediticia de emisores chicos**, no en la distribución. **[I]**
-2. **La tokenización no muestra valor incremental verificable para el emisor argentino de hoy.** No se encontró ningún caso argentino con monto tokenizado colocado y público bajo el régimen CNV [H, E8007, E8011].
+1. **El problema "de distribución" no está demostrado.** La distribución minorista masiva ya existe: 12,3 millones de personas tienen cuenta comitente y unas 1,09 millones de cuentas operan cada mes [H, E8004]. Además, en 2025 las PyMEs captaron USD 10.480 millones en el mercado de capitales con instrumentos convencionales [H, CNV, E5024/E9013; la cifra BCSF de USD 10.212 M usa otra metodología, E8002]. Si hay un problema, parece estar en la **originación y la calidad crediticia de emisores chicos**, no en la distribución. **[I]**
+2. **La tokenización no muestra valor incremental verificable para el emisor argentino de hoy.** Hay 3 FF con oferta pública y representación digital autorizada (Landtoken I, Illa Belgrano I, Espacio Añelo), pero el monto efectivamente representado en tokens no está publicado (la representación es opcional a pedido del inversor) [H, E8007, E8011; corrección A9 §5.8].
 3. **La evidencia global sobre liquidez secundaria y fracasos de plataformas es mayoritariamente negativa** [H, E8013–E8022].
 4. **Evidencia a favor de H0 que hay que reconocer:** existe un registro declarado de demanda minorista a pequeña escala. Landtoken declara más de USD 850 mil y más de 200 inversiones, con ticket desde USD 100 [D, E8012]. También existe un impulso regulatorio fuerte (RG 1125, 1150 y 1165 de 2026) [H, E8005, E8007, E8009]. Ninguna de las dos cosas prueba que haya un negocio de marketplace.
 
@@ -39,10 +39,10 @@ H0 **no queda falsada del todo**, pero queda **seriamente debilitada en su formu
 - **[I]:** con un ticket real promedio muy por debajo del tope, una emisión de USD 300 mil necesita cientos de inversores. El costo de KYC y atención por inversor, más un costo fijo de estructuración que A8 estima (sin verificar) en USD 15–40 mil, puede consumir entre el 5% y el 15% de lo captado. **Esta estimación es una hipótesis y requiere cotizaciones (K3).**
 - **Qué revertiría la objeción:** cotizaciones firmes de fiduciaria/ALyC/PFC con costo total menor al 3% para una emisión de USD 300 mil.
 
-### R4. El crowdfunding regulado lleva 9 años con uso marginal y sin estadística pública
+### R4. El régimen PFC (Ley 27.349) no tiene estadística pública de uso; fuentes secundarias sugieren uso marginal [I]
 - **Evidencia [H]:** la Ley 27.349 es de 2017, la RG 717 de 2017/2018 y la RG 942 de 2022. Ni la nota oficial de la RG 1125 ni la de la RG 1150 informan cantidad de proyectos, montos o plataformas (E8005, E8007, E8043).
 - **[D/O]:** en fuentes secundarias aparece la afirmación de que hubo una sola PFC registrada en 2022 y de que el régimen tiene "muy poco uso". **No se pudo verificar en fuente oficial.** El buscador CNV de la categoría "PLAT. FINAN. COLECT." exige enviar un formulario, cosa que no se hizo por protocolo.
-- **[I]:** si en 9 años el crowdfunding regulado no generó volumen visible, el cuello de botella no era tecnológico (la tokenización no lo resuelve). Probablemente era de oferta de proyectos, de demanda o de costo.
+- **[I]:** si en 9 años el régimen PFC no generó volumen visible, el cuello de botella no era tecnológico (la tokenización no lo resuelve). Probablemente era de oferta de proyectos, de demanda o de costo.
 - **Qué revertiría la objeción:** datos oficiales o estados contables de PFC con un monto acumulado relevante (por ejemplo, más de USD 20 M captados en los últimos 24 meses) y crecimiento interanual.
 
 ### R5. La liquidez secundaria prometida por la tokenización no aparece en la práctica
@@ -85,14 +85,14 @@ H0 **no queda falsada del todo**, pero queda **seriamente debilitada en su formu
 - **Qué revertiría la objeción:** que el piloto muestre inversores aceptando rendimientos esperados con prima de 300 pb o menos sobre ON PyME comparables, por razones no financieras (impacto, cercanía, sector).
 
 ### R11. Los fracasos globales del modelo plataforma de tokenización son la regla, no la excepción
-- **Evidencia [H]:** RealT pasó de unos 700 inmuebles y alrededor de USD 140 M captados (USD 94 M según Outlier) a una demanda municipal, la suspensión de distribuciones (feb-2026), un fiduciario designado (abr-2026), una liquidación voluntaria anunciada (2/7/2026) y un escrow de unos USD 640 mil para 14–22 mil inversores (E8013–E8015).
+- **Evidencia [H]:** RealT pasó de unos 700 inmuebles y alrededor de USD 140 M captados (Outlier informa ~USD 140 M, E9016; la cifra de USD 94 M antes atribuida a Outlier no tiene fuente localizada) a una demanda municipal, la suspensión de distribuciones (feb-2026), un fiduciario designado (abr-2026), una liquidación voluntaria anunciada (2/7/2026) y un escrow de unos USD 640 mil para 14–22 mil inversores (E8013–E8015).
 - **Evidencia [H]:** tZERO perdió USD 35,5 M en 9 meses de 2020 y recibió una multa de la SEC de USD 800 mil (E8018, E8019). Harbor fue absorbida por BitGo con adopción lenta (E8021). Neufund cerró (E8016).
 - **[I]:** el patrón común es poco volumen, costo regulatorio fijo alto y riesgo operativo del activo subyacente (gestión de inmuebles). Ese riesgo no lo resuelve la tecnología.
 - **Qué revertiría la objeción:** un benchmark (A2) que identifique al menos 3 plataformas de tokenización o crowdfunding de deuda/equity pyme rentables y con más de 3 años de operación en mercados emergentes.
 
 ### R12. Mercado chico y concentración de emisores
 - **Evidencia [D]:** a nivel global, el RWA tokenizado se concentra en Treasuries y crédito privado institucional, y el real estate y las pymes son marginales (E8023).
-- **Evidencia [H]:** en Argentina no hay monto tokenizado colocado público bajo el régimen CNV (E8011).
+- **Evidencia [H]:** en Argentina hay 3 FF con oferta pública y representación digital autorizada, pero el monto efectivamente tokenizado no está publicado (E8011, corrección A9 §5.8).
 - **[I]:** un marketplace "multisectorial" arranca con pocos emisores. Que 2 o 3 emisores representen más del 50% del volumen expone al marketplace a un default o fraude concentrado y a un poder de negociación del emisor.
 - **Qué revertiría la objeción:** un pipeline de al menos 15 emisores calificados con LOI y ningún emisor por encima del 25% del volumen esperado.
 
@@ -133,7 +133,7 @@ H0 **no queda falsada del todo**, pero queda **seriamente debilitada en su formu
 ## 4. Contradicciones detectadas (para A9)
 
 - Financiamiento 2025: USD 33.679 M (CNV vía BAE) frente a USD 32.978 M (BCSF). Para PyMEs: USD 10.480 M frente a 10.212 M.
-- RealT: USD 140 M captados (Crypto Briefing) frente a USD 94 M (Outlier).
+- RealT: ~USD 140 M captados (Crypto Briefing y Outlier, E9016). Resuelto por A9: el dato de USD 94 M no tiene fuente localizada.
 - Generación Zoe: pérdidas de los 98 denunciantes de USD 170 mil o de más de USD 400 mil, según el pasaje de la misma nota.
 - Tamaño global de RWA: USD 22–31 mil M según la métrica.
 - iProfesional muestra fecha 2026 en notas de 2019 (E8041). Varias páginas de Blog del Contador e iProfesional tienen fechas de encabezado que no corresponden a la publicación.

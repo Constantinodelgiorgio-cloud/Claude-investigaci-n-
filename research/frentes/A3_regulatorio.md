@@ -160,7 +160,7 @@ URL: https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXX-CapI/
 |---|---|---|---|
 | Índice de registros públicos | https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos y https://www.argentina.gob.ar/cnv/registros-publicos | OK (HTTP 200) | Enlaces a Agentes, PSAV, Mercados, Custodia, ADCVN, etc. [A] |
 | **PSAV** (buscador) | https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Psav | OK | Buscador por formulario; además **descarga directa** GET. [A] |
-| **PSAV** (listado descargable) | https://www.cnv.gov.ar/SitioWeb/Reportes/ListadoRegistrosPsav | OK, xlsx "listado_Registros_PSAV_19102026043903" | **80 personas jurídicas, 0 humanas**; 37 con las 5 actividades; 57 con custodia. Copia íntegra: `research/frentes/A3_anexo_registro_PSAV_CNV_20261019.csv`. [A] |
+| **PSAV** (listado descargable) | https://www.cnv.gov.ar/SitioWeb/Reportes/ListadoRegistrosPsav | OK, xlsx "listado_Registros_PSAV_19102026043903" | **80 personas jurídicas, 0 humanas**; 34 con las cinco actividades (37 con cat. 5; corrección A9); 57 con custodia. Copia íntegra: `research/frentes/A3_anexo_registro_PSAV_CNV_20261019.csv`. [A] |
 | **Agentes (incluye PFC, ALyC, AN, ACVN, AP, AAGI)** | https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Agentes | Página OK; búsqueda sólo por **formulario POST** | **No consultado** (protocolo: no enviar formularios). Tipos disponibles en el selector: AAGI, ACVN, ALYC-Integral, ALYC-PD, ALYC-Propio, ALYC Integral Agro, AN-PJ, AN RUCA, AP-PH, AP-PJ, **PLAT. FINAN. COLECT.** [A] |
 | Matriz de compatibilidades | (ver 2.6) | OK | [A] |
 

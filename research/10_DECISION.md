@@ -17,12 +17,12 @@
 
 1. **El problema de distribución no está demostrado; el de originación, quizá sí.**
    - Las pymes ya consiguieron USD 10.480 M en el mercado de capitales en 2025 sin tokenizar, 66% en pagarés (CNV, informe anual, E5024/E8001).
-   - Hay 12,3 M de cuentas comitentes (A8).
+   - Hay 12,3 M de cuentas comitentes (BYMA, E8004).
    - El cuello de botella plausible es conseguir emisores chicos con calidad crediticia y documentación suficiente, no llegar a los inversores. *Hipótesis a validar (K1, K8).*
 2. **La oferta local tokenizada es chica y casi toda inmobiliaria.**
    - De 18 organizaciones relevadas, unas 6 son comparables (A1).
-   - Solo hay 3 emisiones con oferta pública CNV y representación digital identificadas, todas fideicomisos financieros (Landtoken I, Illa Belgrano I, Espacio Añelo). Las resoluciones están citadas por terceros y falta cotejarlas en la AIF.
-   - El actor no tokenizado con más volumen declarado (Crowdium, USD 13,8 M en 18 proyectos, cifra propia) **no necesitó token**.
+   - Solo hay 3 emisiones con oferta pública CNV y representación digital identificadas, todas fideicomisos financieros (Landtoken I, Illa Belgrano I, Espacio Añelo). Las resoluciones están citadas por terceros y falta cotejarlas en la AIF; el monto efectivamente representado en tokens no es público (A9 §5.8).
+   - El actor no tokenizado con más volumen declarado (Crowdium, USD 13,8 M en 18 proyectos, cifra propia, E1006) **no necesitó token**.
 3. **El token no agrega derechos ni liquidez.**
    - La representación digital "no implicará la creación de un nuevo valor negociable" (Tít. XXII art. 7, E3019).
    - Circula solo entre hasta 5 PSAV, sin DeFi, y el sandbox vence el 31/12/2027 (RG 1150).
@@ -31,7 +31,7 @@
 5. **La economía minorista no cierra con los supuestos base** (`05`, hoja Modelo_M2):
    - Con ticket de USD 800, 2 suscripciones por inversor y CAC de USD 267, el margen de contribución es **negativo** (−12% del GMV): crecer agranda la pérdida.
    - M2 solo cierra en el escenario optimista: CAC ≤ USD 50 y ticket ≥ USD 2.000.
-   - Además, la RG 1125 limita al minorista a UVA 3.000 por emisión (≈USD 4.300) y la PFC a UVA 1,5 M por proyecto (≈USD 2,1 M).
+   - Además, la RG 1125 limita a cada inversor a UVA 3.000 por emisión (≈USD 4.300; art. 148, E9005) y la PFC a UVA 1,5 M por proyecto (≈USD 2,1 M; E9009).
 6. **M1 tiene contribución positiva en el escenario base, pero es chica:**
    - unos USD 6.500 por campaña;
    - el equilibrio está en unas 23 campañas por año con fee de originación del 2,5% y monto medio de USD 400k (`05`, Modelo_M1);

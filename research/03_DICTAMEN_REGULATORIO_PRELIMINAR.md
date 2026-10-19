@@ -67,7 +67,7 @@ Escala de certeza: **Alta** = texto oficial leído; **Media** = inferencia direc
 - **M1 (originación + descubrimiento con socios autorizados):** encuadres disponibles en la norma vigente: referenciamiento a PSAV (RG 1172 art. 35), **AP** o **AAGI** con convenios con ALyC/AN (Tít. VII). Para ofertas de PFC, la PFC no puede delegar servicios del contrato con emprendedores ni destacar proyectos (NT PFC art. 14 b y o) — limita co-marketing. **Certeza: Media.**
 - **M2 (plataforma integral con emisión, KYC, custodia):** exige múltiples figuras (PFC o ALyC; PSAV en **todas** las categorías para tokenización CNV; custodia ADCVN/titular registral), y la **PFC no puede inscribirse en otras categorías** (NT PFC art. 9; Matriz RG 1165), ni los Agentes Registrados pueden ser PSAV (RG 1172 art. 5 a) → probablemente requiere grupo con entidades separadas o alianzas. **Certeza: Alta en restricciones; Baja en estructura óptima.**
 - **M3 (secundario):** fuertemente restringido: PFC sólo secundario propio al contado; tokenizados sólo entre PSAV designados; ACVN/Mercado para VN con oferta pública. **Certeza: Alta en restricciones.**
-- El **sandbox de tokenización vence el 31/12/2027** (RG 1150 art. 38 Tít. XXII): cualquier plan que dependa de él tiene horizonte regulatorio acotado. **Certeza: Alta.**
+- El **sandbox de tokenización vence el 31/12/2027** (RG 1150 art. 38 Tít. XXII): cualquier plan que dependa de él tiene horizonte regulatorio acotado. Además, vencido ese plazo **no se admiten nuevas emisiones con representación digital** salvo prórroga o régimen permanente (re-verificado por A9, E9006). **Certeza: Alta.**
 
 ---
 
