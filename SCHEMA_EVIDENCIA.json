@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Registro de evidencia para investigación RWA Argentina",
+  "type": "object",
+  "required": ["id", "claim", "url", "publisher", "accessed_at", "type", "confidence", "confirmation_status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^E[0-9]{4,}$"},
+    "claim": {"type": "string", "minLength": 10},
+    "url": {"type": "string", "format": "uri"},
+    "publisher": {"type": "string"},
+    "published_at": {"type": ["string", "null"], "format": "date"},
+    "accessed_at": {"type": "string", "format": "date-time"},
+    "type": {"enum": ["regulacion_oficial", "registro_oficial", "documento_primario_empresa", "fuente_secundaria", "inferencia", "declaracion_comercial"]},
+    "confidence": {"enum": ["alta", "media", "baja"]},
+    "confirmation_status": {"enum": ["verificado", "pendiente", "contradictorio", "no_verificable"]},
+    "notes": {"type": "string"},
+    "supports": {"type": "array", "items": {"type": "string"}},
+    "contradicts": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
