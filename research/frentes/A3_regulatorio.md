@@ -129,7 +129,13 @@ URL: https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXX-CapI/
 - **Res. UIF 78/2023** (mercado de capitales): https://www.argentina.gob.ar/normativa/nacional/norma-383462/texto (texto original). Sujetos obligados incluyen **PFC**; clientes de PFC = financiados, inversores (aunque no integren) y otros; DD simplificada para aportes en financiamiento colectivo ≤4 SMVM. **Modificaciones posteriores no verificadas.** [A] / vigencia actual [M]
 - NT CNV Tít. XI (PLA/FT): referido por RG 1172 art. 24; **no leído**.
 
-### 2.12 Otras
+### 2.12 NT 2013 Tít. VII — Agentes (AN, ALyC, AAGI, AP, ACVN) — capítulos leídos
+- Cap. IV AAGI: https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloVII-CapIV/htm (el título de la página dice "Agentes productores" pero el contenido es AAGI, Cap. sustituido por RG 731/2018). Arts. 2 (actividades, incl. referenciamiento a PSAV, RG 1048/2025), 3 (no cobrar/pagar por clientes, no custodiar, **no ofrecer públicamente VN sin autorización**), 7 (convenios con ALyC/AN/SG informados en 2 días), 15 (retribución, incluso % de comisiones del ALyC, con revelación al cliente), 19 (PN UVA 65.350). [A]
+- Cap. V AP: https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloVII-CapV/htm. Art. 2 (sust. RG 1016/2024): asesoramiento; difusión y promoción de VN con oferta pública autorizada **bajo responsabilidad de AN/ALyC/AAGI**; también en oferta privada y oferta sin contacto suficiente; puede "captar clientes". Art. 3 contratos informados por AIF en 2 días. Art. 4 prohibiciones (recibir/custodiar fondos o VN, gestionar órdenes, usar contraseñas del cliente, delegar). [A]
+- Cap. VI ACVN: https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloVII-CapVI/htm. Art. 2 objeto; art. 4 PN UVA 65.350; art. 6 contrapartida líquida 20%. [A]
+- Cap. I AN (https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloVII-CapI/htm): contempla acuerdos de **referenciamiento AN–PSAV** en ambos sentidos (AN no responsable por decisiones en el ámbito del PSAV; si recibe clientes, cumple apertura de cuenta). Número de artículo/inciso exacto **no anotado** en esta sesión. [A] contenido / [M] cita
+
+### 2.13 Otras
 - NT Tít. XIV Cap. II "Hub de innovación e inclusión financiera": descargado, **no analizado** (https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXIV-CapII/htm).
 
 ---
