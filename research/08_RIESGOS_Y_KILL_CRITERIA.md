@@ -1,0 +1,70 @@
+# 08: riesgos y kill criteria (BORRADOR A8)
+
+**Estado:** borrador del frente A8 para revisión del orquestador y de A9. **Fecha base:** 2026-10-19 (día 0).
+**Evidencia:** `research/frentes/A8_evidencia.csv` (E80xx). Desarrollo argumental en `research/frentes/A8_red_team.md`.
+**Advertencia:** las probabilidades e impactos son **cualitativos** y responden al juicio del red team, no a una medición. Los umbrales de kill son **decisiones propuestas**, no datos de mercado. El responsable humano debe ratificarlos antes del día 7.
+
+Escala: Probabilidad (P) e Impacto (I) en **Baja / Media / Alta / Crítica** (esta última solo para impacto). Los modelos se refieren a M0 (portal informativo), M1 (originación + socios autorizados), M2 (plataforma integral) y M3 (secundario).
+
+---
+
+## 1. Tabla de riesgos
+
+| # | Riesgo | Descripción | P | I | Modelos más expuestos | Evidencia | Mitigaciones | Señal temprana (KRI) |
+|---|---|---|---|---|---|---|---|---|
+| R01 | **Fraude de emisor** | Desvío de fondos, caja única entre fideicomisos, proyectos inexistentes o sobrevaluados | Media | Crítica | M1, M2 | E8024, E8028, E8029, E8013 | DD independiente (legal, contable, registral). Fondos siempre en fiduciario o PSP autorizado, nunca en la plataforma. Desembolso por hitos con certificación de avance de un tercero. Verificación registral de dominio y gravámenes. Lista negra y consulta de antecedentes. Reporte mensual auditable | Retrasos en reporting de más de 15 días. Cambios de fiduciario. Divergencias entre avance declarado y certificado |
+| R02 | **Calidad de proyectos / selección adversa** | Llegan emisores rechazados por SGR, bancos o ALyC | Alta | Alta | M1, M2 | E8034, E8035, E8045, E8030 | Criterios mínimos de admisión publicados (balance auditado, antigüedad de 3 años o más, flujo demostrable, sin deuda con ARCA o previsional). Preferir emisores con aval de SGR o garantía real. Comité de admisión con voto externo. Publicar la tasa de rechazo | Tasa de aprobación menor al 30% o mayor al 80% (lo segundo indica un filtro laxo) |
+| R03 | **Liquidez secundaria inexistente** | El inversor no puede salir y aparecen reclamos y daño reputacional | Alta | Alta | M2, M3 (y M1 si se promete salida) | E8017, E8022, E8014, E8023 | No prometer liquidez. Diseñar instrumentos con vencimiento corto (de 6 a 24 meses) y amortización. Si hay secundario, solo vía mercado o ALyC autorizado. Comunicar que es un instrumento ilíquido | Solicitudes de salida anticipada mayores al 5% de los inversores por trimestre |
+| R04 | **AML/KYC** | Uso del marketplace para lavado. Inversores o emisores PEP o de alto riesgo. Fondos cripto de origen dudoso | Media | Crítica | M1, M2 (M0 bajo) | E8040, E8046 (Sur Finanzas, contexto) | KYC y AML a cargo del sujeto obligado autorizado (ALyC, PSAV, fiduciario). Contrato con responsabilidades UIF claras. Prohibir aportes en efectivo y en cripto sin trazabilidad. Screening de PEP y sanciones de emisores y beneficiarios finales | Alertas ROS. Concentración de un inversor por encima del 20% de una emisión |
+| R05 | **Conflictos de interés** | La plataforma cobra por colocar, invierte en proyectos propios o recibe fees del emisor y del inversor | Alta | Alta | M1, M2 | E8035 (incentivos). RG 942: la PFC puede suscribir hasta 10% con divulgación | Parte del fee diferido y condicionado a la performance. Prohibir listar proyectos de partes relacionadas en los primeros 12 meses. Divulgación de todos los pagos. Comité de admisión independiente del área comercial | Porcentaje de proyectos con vínculo con socios o personal de la plataforma |
+| R06 | **Default / incumplimiento** | El proyecto no paga los servicios | Alta | Alta | M1, M2 | E8030 (mora en descuento de documentos al 2%, rechazos de cheques en récord), E8034 (18% de fracasos en Crowdcube) | Garantías (SGR, prenda, hipoteca, cesión de flujos). Fondo de reserva en la estructura. Diversificación obligatoria sugerida al inversor. Política pública de recupero. Publicar la tasa de default por cohorte | Atraso mayor a 30 días en cualquier servicio. Default acumulado de la cohorte por encima del 3% |
+| R07 | **Gobernanza** | Decisiones del vehículo (fideicomiso o SA) sin representación efectiva de inversores dispersos. Token sin derechos claros | Media | Alta | M2 | E8015 (RealT: fiduciario designado por un tribunal, escrow insuficiente) | Usar instrumentos con derechos definidos por ley (ON, VF, acciones). Asamblea y representante de tenedores. El token solo como registro, nunca como fuente de derechos. Auditoría anual | Ausencia de asamblea o reporte en los plazos previstos |
+| R08 | **Disputas y reclamos** | Inversores reclaman a la plataforma por la pérdida aunque no sea emisora | Media | Alta | M0–M2 | E8028, E8029, E8015 | Términos claros de rol (no emisor, no asesor). Seguro de responsabilidad civil profesional. Canal de reclamos con SLA. Mediación prevista. Registro auditable de toda la información publicada (audit trail) | Más de 1 reclamo formal cada 100 inversores por trimestre |
+| R09 | **Ciberseguridad** | Robo de credenciales, manipulación de listados, pérdida de claves de contratos o billeteras, phishing con la marca | Media | Crítica | M2, M3 (M1 media) | Inferencia. Patrón general del sector cripto | No custodiar fondos ni claves. MFA. Pentest antes del lanzamiento. Monitoreo de dominios clonados. Contratos auditados si los hubiera. Plan de respuesta a incidentes | Intentos de phishing detectados. Hallazgos críticos de pentest abiertos |
+| R10 | **Regulatorio (cambio o encuadre)** | Cambio de normas, fin del sandbox, encuadre como intermediación no autorizada, sanción CNV | Alta | Crítica | M1–M3 | E8005–E8010 (más de 10 RG en unos 30 meses, sandbox hasta 31/12/2027), E8016, E8036, E8037 | Dictamen escrito de abogado especialista antes de publicar cualquier CTA. Operar solo por sujetos autorizados. Monitoreo semanal del Boletín Oficial y de la CNV. Diseño modular para reencuadrar | Nueva RG que afecte PFC, PSAV o tokenización. Consulta pública CNV sobre el tema |
+| R11 | **Concentración / dependencia** | Pocos emisores explican la mayoría del volumen, o un solo socio autorizado concentra la operación | Alta | Alta | M1, M2 | E8011, E8012 (oferta escasa), E8009 | Al menos 2 socios autorizados por función crítica. Tope del 25% de volumen por emisor. Cláusulas de *non-circumvention* y portabilidad de datos | Mayor emisor por encima del 25% del GMV. Un solo socio por encima del 70% de las colocaciones |
+| R12 | **Macro** | Volatilidad de tasas, inflación (33,4% interanual), cambios cambiarios, recesión sectorial que eleve defaults o haga más atractivas las alternativas líquidas | Alta | Alta | Todos | E8031–E8033 | Instrumentos cortos. Preferir moneda dura o ajuste CER/UVA según el proyecto. Stress test de cada emisión. Pausar las colocaciones ante shocks | Salto de la tasa de caución mayor a 10 pp en 30 días. Brecha cambiaria mayor al 20% |
+| R13 | **Reputacional por asociación** | "Token" asociado a Zoe o $LIBRA. Un solo caso malo arrastra la marca | Alta | Alta | M1–M3 | E8024–E8027 | Comunicar "valores negociables autorizados por CNV" y no "tokens". Admisión restrictiva. Transparencia de los defaults | Sentimiento negativo en medios o redes. Caída de la conversión de la landing |
+| R14 | **Desintermediación por socios / incumbentes** | Un ALyC o PSAV con base masiva lanza su propio marketplace | Media | Alta | M1 | E8004, E8010 | Contratos de exclusividad temporal. Especialización vertical (nicho) en lugar de multisectorial. Datos propietarios de originación | Anuncio de un incumbente (ALyC top o billetera) con producto equivalente |
+| R15 | **Unit economics** | El take rate sobre un GMV chico no cubre el costo fijo legal, de compliance y de atención | Alta | Alta | M1, M2 | E8003, E8039, E8044 (inferencia) | Validar la disposición a pagar antes de construir. Empezar con M0/M1 sin tecnología on-chain. Fees fijos de onboarding a emisores | Costo por emisión mayor al 50% del ingreso por emisión en el piloto |
+
+---
+
+## 2. Kill criteria cuantificados y fechados
+
+**Responsable humano de la decisión:** *[completar: fundador o decisor designado]*. **Validación legal:** *[completar: abogado especialista en mercado de capitales argentino]*.
+**Regla:** si se activa un criterio marcado como **KILL**, se abandona el modelo indicado. Si se activa uno marcado como **PIVOT**, se reformula el modelo y se vuelve a medir **una sola vez**. Ningún criterio se relaja sin un registro escrito del motivo.
+
+| ID | Fecha límite | Métrica | Umbral (propuesto) | Acción si no se cumple | Modelo | Cómo se mide (sin captar dinero) |
+|---|---|---|---|---|---|---|
+| K1 | **2026-12-18** (día 60) | Emisores calificados que firman una LOI **no vinculante** para emitir en 12 meses (por USD 100 mil o más; balance auditado; 2 años o más de operación) | **≥ 5 LOI** sobre ≥ 20 emisores contactados en entrevistas (A4) | **KILL** M1/M2 multisectorial. Evaluar solo M0 | M1, M2 | Entrevistas A4 y LOI. Sin publicar oferta alguna |
+| K2 | **2026-12-18** (día 60) | Socios autorizados (ALyC, PFC, fiduciaria o PSAV) que aceptan un term sheet no vinculante de referral o revenue share | **≥ 2 socios** con revenue share ≥ 30% del fee de colocación y cláusula de *non-circumvention* ≥ 24 meses | **KILL** M1 | M1 | Reuniones y term sheet |
+| K3 | **2027-01-17** (día 90) | Costo total cotizado (legal, fiduciario, auditoría, calificación si aplica, aranceles, tecnología) para una emisión de USD 300 mil | **≤ 6%** del monto (al menos 3 cotizaciones independientes) | Si es > 6%: **KILL** del segmento de emisiones < USD 500 mil. Si es > 10%: **KILL** M2 | M1, M2 | Cotizaciones escritas |
+| K4 | **2027-01-17** (día 90) | Dictamen legal escrito sobre el encuadre de M0 y M1 | Que M1 sea viable **sin** registro propio, o con registro propio de costo ≤ USD 150 mil y plazo ≤ 9 meses | Si no: **PIVOT** a M0. Si M0 también requiere registro: **KILL** | M0, M1 | Dictamen de abogado especialista |
+| K5 | **2027-01-17** (día 90) | Lista de espera de inversores en una landing **sin captación de fondos** | **≥ 300 registros** con ticket indicado ≥ USD 500 (o equivalente), con pauta ≤ USD 3.000, es decir, costo por registro ≤ USD 10 | Si es < 150: **KILL** del lado de la demanda minorista. Si está entre 150 y 299: **PIVOT** a inversores calificados | M1 | Landing y analytics |
+| K6 | **2027-01-17** (día 90) | Conversión de la lista de espera a precalificación (completar el cuestionario de perfil de riesgo sin dinero) | **≥ 15%** | Si es < 5%: **KILL** M1 minorista | M1 | Embudo de la landing |
+| K7 | **2027-01-17** (día 90) | Disposición a pagar del emisor | **≥ 3 de 5** emisores con LOI aceptan un fee ≥ 1,5% del monto captado **o** un fee fijo de onboarding ≥ USD 3.000 | Si no: **KILL** del modelo de comisión. Evaluar SaaS B2B (A5) | M1, M2 | Entrevistas con precio explícito (técnica Van Westendorp o similar) |
+| K8 | **2027-01-17** (día 90) | Calidad del pipeline: proyectos que pasan una DD mínima documental | **≥ 30%** de al menos 20 proyectos revisados | Si es < 30%: **KILL** multisectorial y **PIVOT** a un nicho vertical con aval o garantía. Si una segunda medición en un nicho da < 30%: **KILL** | M1, M2 | Checklist de DD (A6) |
+| K9 | **2027-04-17** (día 180) | Primera colocación piloto ejecutada **por un socio autorizado** (no por la plataforma) | Al menos 1 emisión colocada ≥ 70% del monto objetivo dentro del período de suscripción | Si no: **KILL** M1 | M1 | Aviso de resultado del socio |
+| K10 | Continuo, desde el piloto | Default o fraude | Default > 5% del monto de la cohorte piloto **o** cualquier fraude confirmado en un proyecto listado | **KILL** inmediato de nuevas colocaciones y revisión integral | M1, M2 | Reporte de servicios |
+| K11 | Continuo, con revisión trimestral | Cambio regulatorio adverso | La CNV no prorroga ni convierte en permanente el sandbox antes del 2027-06-30, **o** restringe a minoristas, **o** una nueva RG encuadra el referral con CTA como intermediación | **KILL** M2/M3. Reevaluar M1 con el abogado | M1–M3 | Monitoreo del Boletín Oficial y la CNV |
+| K12 | **2027-04-17** (día 180) | Unit economics del piloto | Margen de contribución por emisión > 0 (ingreso por emisión > costo variable de DD, legal y atención) | Si es ≤ 0: **KILL** M1 con ese pricing | M1 | Contabilidad del piloto (A5) |
+| K13 | Continuo | Desintermediación | Un ALyC o billetera con más de 500 mil clientes lanza un marketplace equivalente de proyectos productivos antes de K9 | **PIVOT** obligatorio a nicho vertical o a proveedor B2B del incumbente | M1 | Monitoreo competitivo (A1) |
+| K14 | **2027-01-17** (día 90) | Concentración del pipeline | Ningún emisor > 25% del volumen esperado de los primeros 12 meses | Si se incumple: **PIVOT** (no lanzar hasta diversificar) | M1, M2 | Pipeline de LOI |
+
+**Gasto máximo autorizado hasta el día 90 (propuesta):** solo validación (entrevistas, landing, honorarios legales del dictamen y pauta de hasta USD 3.000). **Prohibido** desarrollar smart contracts, custodia o mercado secundario antes de que K1–K8 estén verdes.
+
+---
+
+## 3. Supuestos críticos que, si cambian, alteran este documento
+
+1. Que el registro PSAV **no** habilita por sí solo la oferta pública de valores negociables (supuesto del mandato, a confirmar por A3).
+2. Que el costo fijo de estructuración de emisiones chicas sea alto. Hoy es una **inferencia** (E8044) y debe medirse en K3.
+3. Que el uso histórico del crowdfunding CNV sea marginal. Hoy es una **inferencia por ausencia de estadística** (E8043) y debe verificarse en el registro y los estados contables de las PFC.
+4. Que la tasa real siga cercana a cero o negativa. Esto sostiene la búsqueda de rendimiento de los minoristas, pero también el riesgo de Ponzi (E8031–E8033).
+
+## 4. Evidencia que haría pasar de NO-GO a PILOTO CONDICIONADO
+
+- K1, K2, K3, K4 y K7 en verde al día 90.
+- Datos oficiales que muestren volumen PFC o tokenizado creciente (más de USD 20 M en los últimos 24 meses).
+- Al menos 1 socio autorizado que asuma contractualmente KYC/AML, custodia de fondos y colocación.
