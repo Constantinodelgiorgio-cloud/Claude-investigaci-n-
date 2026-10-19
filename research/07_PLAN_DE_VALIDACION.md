@@ -67,18 +67,22 @@ Reglas: preguntar por el pasado concreto, no por intenciones futuras; no mencion
 - CTA: lista de espera / agendar diagnóstico gratuito. Medir: visitas → registro → diagnóstico agendado → envío de documentación.
 - Presupuesto tope sugerido: definido por el responsable humano; el agente no compromete gasto.
 
-## 5. Métricas de disposición a pagar
+## 5. Métricas de disposición a pagar (alineadas con los kill criteria de `08`)
 
-| Métrica | Umbral "señal positiva" (hipótesis) |
-|---|---|
-| Emisores que entregan balances y flujo de fondos tras la entrevista | ≥ 5 de 9 |
-| Emisores que aceptan un fee de preparación pagado por adelantado (oferta no vinculante, precio explícito) | ≥ 3 |
-| Operadores que firman carta de intención no vinculante para recibir originación con fee de éxito | ≥ 2 |
-| Inversores que, sin incentivo, se registran en lista de espera tras ver una ficha *ficticia y marcada como ejemplo* | medido, sin umbral de decisión (señal débil) |
-| Costo total de estructuración informado por operadores vs. monto típico pedido por emisores | Monto ≥ 10× costo |
+| Métrica | Umbral (propuesta de decisión, no dato) | Kill criterion |
+|---|---|---|
+| LOI no vinculantes de emisores calificados (≥ USD 100k, ≥ 2 años de operación) sobre ≥ 20 emisores contactados (las 7 entrevistas de emisores + contacto ampliado vía cámaras y contadores) | ≥ 5 | K1 |
+| Socios autorizados con term sheet no vinculante de referral o revenue share | ≥ 2 | K2 |
+| Emisores (de los que firmaron LOI) que aceptan un fee ≥ 1,5% del monto o ≥ USD 3.000 fijo, con precio explícito | ≥ 3 de 5 | K7 |
+| Proyectos que pasan la DD documental mínima (checklist de `04`, E1–E3) | ≥ 30% de ≥ 20 revisados | K8 |
+| Costo total cotizado para una emisión de USD 300k (3 cotizaciones independientes) | ≤ 6% | K3 |
+| Lista de espera de inversores en la landing (sin captación) | ≥ 300 registros a ≤ USD 10 por registro | K5 (solo relevante si se mantiene el canal minorista) |
+| Inversores que, sin incentivo, se registran tras ver una ficha *ficticia marcada como ejemplo* | se mide, sin umbral de decisión (señal débil) | — |
 
-## 6. Hitos 30/60/90 días
+## 6. Hitos 30/60/90 días (fechas desde 2026-10-19)
 
-- **Día 30:** dictamen de abogado sobre M0/M1 (preguntas de `11`); 10 entrevistas realizadas y transcriptas; mapa de costos reales de 2 operadores.
-- **Día 60:** 18 entrevistas; landing activa ≥ 4 semanas; 2 LOI de operadores o decisión de abandono según `08`.
-- **Día 90:** 1 proyecto piloto preparado (legajo completo) y presentado a un operador autorizado, sin que MKT reciba fondos; decisión GO/NO-GO según `10`.
+- **Día 30 (2026-11-18):** abogado designado y preguntas de `11` enviadas por el responsable humano; 10 entrevistas hechas y transcriptas (con consentimiento); nicho vertical elegido (agro o energía) con los criterios de §1; landing revisada por el abogado y publicada.
+- **Día 60 (2026-12-18):** 18 entrevistas; ≥ 20 emisores contactados; evaluación de K1 y K2 → seguir o abandonar M1.
+- **Día 90 (2027-01-17):** dictamen escrito (K4); 3 cotizaciones de estructuración (K3); K5–K8 medidos; decisión según `10_DECISION.md`. Si sigue: preparar un legajo piloto completo y presentarlo a un socio autorizado, sin que la plataforma reciba fondos (K9 al día 180).
+
+**Costo de este plan (SUPUESTO):** honorarios del dictamen legal + pauta de la landing ≤ USD 3.000 + tiempo del equipo. Es mucho menos que construir cualquier MVP-1 o M2 (ver `06`).
