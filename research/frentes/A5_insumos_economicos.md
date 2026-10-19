@@ -1,7 +1,7 @@
 # A5 — Insumos para el modelo económico (unit economics)
 
-**Frente:** A5 (insumos) · **Fecha de ejecución:** 2026-10-19 (Argentina) · **Evidencia:** `A5A7_evidencia.csv` (IDs E5001–E5040)
-**Conversión usada (solo para orientación):** UVA = ARS 2.159,10 al 19/10/2026 (BCRA, API Estadísticas v4.0, variable 31); USD mayorista de referencia = ARS 1.514,57 al 16/10/2026 (BCRA, variable 5). Las equivalencias en USD son **inferencias** y no datos de la fuente original.
+**Frente:** A5 (insumos) · **Fecha de ejecución:** 2026-10-19 (Argentina) · **Evidencia:** `A5A7_evidencia.csv` (IDs E5001–E5043)
+**Conversión usada (solo para orientación):** UVA = ARS 2.159,10 al 19/10/2026 (BCRA, API Estadísticas v4.0, variable 31, E5043); USD mayorista de referencia = ARS 1.514,57 al 16/10/2026 (BCRA, variable 5). Las equivalencias en USD son **inferencias** y no datos de la fuente original.
 
 > Regla de este documento: **DATO** = valor tomado de una fuente con URL, consultada en esta fecha. **SUPUESTO** = valor que propone este frente para modelar, sin respaldo externo suficiente. Ningún SUPUESTO puede presentarse como dato en el modelo `05_MODELOS_DE_NEGOCIO`.
 

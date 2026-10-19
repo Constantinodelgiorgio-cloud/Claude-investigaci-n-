@@ -1,0 +1,88 @@
+# 03 — Dictamen regulatorio preliminar (BORRADOR)
+
+**Fecha:** 2026-10-19 · **Jurisdicción:** República Argentina · **Elaborado por:** frente A3 (agente de investigación, no abogado).
+**Base documental:** `research/frentes/A3_regulatorio.md` y `research/frentes/A3_evidencia.csv`.
+
+> **DISCLAIMER.** Este documento es un borrador de investigación. **No sustituye asesoramiento jurídico**, no constituye opinión legal y **no concluye habilitación operativa** de ninguna actividad. Toda conclusión debe ser revisada por un **abogado argentino especialista en mercado de capitales y PLA/FT**, contrastando además los registros públicos de la CNV por CUIT. Responsable humano de validación: **pendiente de designar**.
+
+> **ACLARACIÓN OBLIGATORIA.** **El registro como PSAV no equivale, por sí solo, a autorización de oferta pública de valores negociables.** Lo dice la propia CNV: "Los PSAV tienen prohibido todo ofrecimiento o intermediación que constituya una oferta pública con Activos Virtuales que sean valores negociables comprendidos en los términos del artículo 2° de la Ley de Mercado de Capitales, excepto que los mismos cuenten con autorización de oferta pública por parte de la CNV" (NT Tít. XIV Cap. III art. 38, texto RG CNV 1172/2026). Los considerandos de esa RG agregan que la CNV regula la **actividad** de los PSAV, no los activos virtuales, "excepto que éstos encuadren en la definición de valores negociables". Un token tampoco crea derechos por sí mismo: la representación digital "no implicará la creación de un nuevo valor negociable" (NT Tít. XXII Cap. I art. 7).
+
+Escala de certeza: **Alta** = texto oficial leído; **Media** = inferencia directa de texto oficial o desfase de consolidación; **Baja** = interpretación, requiere abogado.
+
+---
+
+## 1. Fuentes clave (URLs oficiales)
+
+| Id | Norma | URL |
+|---|---|---|
+| F1 | Ley 26.831 (texto actualizado) | https://www.argentina.gob.ar/normativa/nacional/ley-26831-206592/actualizacion |
+| F2 | Ley 27.349 (texto actualizado), Tít. II | https://www.argentina.gob.ar/normativa/nacional/ley-27349-273567/actualizacion |
+| F3 | Ley 25.246 (texto actualizado; incorpora cambios Ley 27.739) | https://www.argentina.gob.ar/normativa/nacional/ley-25246-62977/actualizacion |
+| F4 | RG CNV 1125/2026 (B.O. 07/04/2026) | https://www.boletinoficial.gob.ar/pdf/aviso/primera/340413/20260407 |
+| F5 | RG CNV 1150/2026 (B.O. 11/06/2026) | https://www.argentina.gob.ar/normativa/nacional/norma-426586/texto |
+| F6 | RG CNV 1165/2026 (B.O. 07/09/2026) + Matriz | https://www.argentina.gob.ar/normativa/nacional/norma-429715/texto · https://www.argentina.gob.ar/sites/default/files/matriz_de_compatibilidades_-bidireccional-v.01.09.pdf |
+| F7 | RG CNV 1172/2026 (14/10/2026) | https://www.cnv.gov.ar/descargas/marcoregulatorio/blob/ce91d412-7578-451b-8041-7f689e20f5d5 |
+| F8 | NT Tít. XIV Cap. I (PFC) | https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXIV-CapI/htm |
+| F9 | NT Tít. XXII Cap. I (tokenización; consolidado sin RG 1150) | https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXXII-CapI/htm |
+| F10 | NT Tít. XX Cap. I (oferta privada) | https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloXX-CapI/htm |
+| F11 | NT Tít. VII Cap. IV (AAGI) / Cap. V (AP) / Cap. VI (ACVN) | https://www.argentina.gob.ar/normativa/recurso/219405/texact-TituloVII-CapIV/htm · .../texact-TituloVII-CapV/htm · .../texact-TituloVII-CapVI/htm |
+| F12 | Res. UIF 49/2024 (PSAV) | https://www.boletinoficial.gob.ar/pdf/aviso/primera/305109/20250711 |
+| F13 | Res. UIF 78/2023 (mercado de capitales, incl. PFC) | https://www.argentina.gob.ar/normativa/nacional/norma-383462/texto |
+| F14 | Registro PSAV CNV (descarga) | https://www.cnv.gov.ar/SitioWeb/Reportes/ListadoRegistrosPsav |
+| F15 | Registro de Agentes CNV (PFC, ALyC, AN, AP, AAGI, ACVN) | https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Agentes (requiere formulario; no consultado) |
+
+---
+
+## 2. Pregunta previa: ¿la promoción o publicidad puede ser oferta pública?
+
+**Sí, puede.** La Ley 26.831 art. 2 define oferta pública como la "invitación que se hace a personas en general o a sectores o a grupos determinados para realizar cualquier acto jurídico con valores negociables", efectuada por emisores, tenedores u "organizaciones [...] dedicadas en forma exclusiva o parcial al comercio de aquéllos", por "medios electrónicos incluyendo el uso de correo electrónico y redes sociales [...] o cualquier otro procedimiento de difusión" (F1, Alta). Además:
+- Sólo pueden hacer oferta pública los emisores y "los agentes registrados autorizados" (art. 82, F1, Alta); CNV puede tratar como oferta pública toda negociación con "características semejantes" (art. 81, F1, Alta).
+- Las reglas de publicidad (arts. 112-115) alcanzan a "cualquier otra persona humana o jurídica", excepto colaboraciones periodísticas (art. 115, F1, Alta).
+- La promoción profesional de VN es la actividad típica del **Agente Productor**, bajo convenio y responsabilidad de AN/ALyC/AAGI (F11 Cap. V art. 2, Alta).
+- La "Publicidad Web Dirigida a Residentes" impide el puerto seguro de oferta privada (F10 art. 3, Alta).
+- Sanciones del art. 132 Ley 26.831 a "personas [...] de cualquier naturaleza que infringieren" la ley (F1, Alta).
+
+**Factores que (inferencia, Baja) aumentan el riesgo de que un portal sea considerado oferente/intermediario:** (a) ofertas concretas de VN con precio/rendimiento; (b) botón de suscripción o captura de datos para invertir; (c) comisión de éxito ligada a montos colocados; (d) selección/ranking discrecional o recomendaciones; (e) recepción de fondos u órdenes; (f) dirigirse a residentes de forma masiva. Factores que lo reducen: contenido educativo/periodístico; información pública de ofertas **ya autorizadas** con enlace al agente/PFC registrado y leyendas; remuneración fija no vinculada a colocación (a validar); no mezclar ofertas privadas con difusión abierta. **Hipótesis para abogado.**
+
+---
+
+## 3. Matriz de 8 escenarios
+
+| # | Escenario (qué hace la plataforma) | Posible figura | Restricciones relevantes | Autoridad | Registro específico | Controles AML/KYC | Fuentes (artículo + URL) | Certeza | Hipótesis para abogado |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Portal informativo** (directorio/noticias; sin órdenes, sin fondos, sin recomendaciones, sin CTA de inversión) | Ninguna figura CNV *si* no hay "invitación" a operar VN; editor/medio | Arts. 112-116 Ley 26.831 (publicidad engañosa, noticias falsas en ámbito de oferta pública); art. 113 denominaciones exclusivas; RG 1172 art. 34 (no sugerir ser PSAV); Ley 27.349 art. 25 (denominación "PFC" exclusiva) | CNV (si deriva en oferta pública); Defensa del Consumidor | Ninguno *a priori* | No es sujeto obligado UIF por esta actividad (Ley 25.246 art. 20 no lo lista) — inferencia | Ley 26.831 arts. 2, 112-116 (F1); RG 1172 art. 34 (F7); Ley 25.246 art. 20 (F3) | Media | ¿Dónde está el umbral entre información y "invitación" para un portal que lista ofertas autorizadas? ¿El modelo de ingresos (fee fijo del emisor) lo convierte en promotor? |
+| 2 | **Listados con CTA** ("Invertir" que redirige al agente/PFC/PSAV autorizado; posible fee) | (a) **Referenciador** bajo convenio; (b) **AP** (difusión/promoción y captación de clientes para AN/ALyC/AAGI); (c) **AAGI** (asesoramiento + referenciamiento a PSAV, % de comisiones); (d) para PSAV: referenciamiento del art. 35 RG 1172 | Referenciador: "limitarse a redireccionar al cliente y facilitar el contacto [...] sin intervenir en la recepción, transmisión o ejecución de órdenes" (RG 1172 art. 35); convenio informado a CNV en 5 días (lo informa el PSAV). AP: sólo VN con oferta pública autorizada (o privada/sin contacto según NT), no recibe fondos ni gestiona órdenes (Tít. VII Cap. V art. 4). PFC: no puede delegar servicios del contrato con emprendedores (NT PFC art. 14 o) | CNV | AP o AAGI (si se promueven VN); ninguno si sólo referenciación a PSAV no-VN (a confirmar) | Si es AP/AAGI: sujeto obligado vía agentes CNV (Ley 25.246 art. 20 inc. 7, Res. UIF 78/2023) — inferencia; KYC lo hace el autorizado | RG 1172 art. 35 (F7); Tít. VII Cap. IV arts. 2, 3, 15 y Cap. V arts. 2, 4 (F11); NT PFC art. 14 (F8) | Media | ¿Un tercero no registrado puede referir a una ALyC/PFC (no PSAV) con fee por éxito sin ser AP? ¿El CTA a ofertas de PFC viola la prohibición de delegar o de destacar proyectos? |
+| 3 | **Colocación** (distribuir emisiones de terceros, tomar órdenes/suscripciones) | AN/ALyC (colocación por Tít. VI Cap. IV) o **PFC** (RG 1125 art. 146 NT); en tokenización CNV, PSAV designados (Tít. XXII) | Sólo emisores y agentes registrados hacen oferta pública (art. 82); RG 1125: topes por inversor UVA 3.000/emisión, UVA 10.000 total, 5%/10% patrimonio (art. 148 NT); PFC: tope UVA 1.500.000 por proyecto/12 meses, 10% o UVA 150.000 por inversor, mínimo 5 inversores, fondos vía fiduciario financiero CNV o PSP BCRA | CNV | Agente (art. 47 Ley 26.831) o PFC (Ley 27.349 art. 23/25) | Sujeto obligado UIF (Ley 25.246 art. 20 incs. 7-8); Res. UIF 78/2023 (DD simplificada para aportes de FC ≤4 SMVM); NT PFC art. 13 l) y q) | Ley 26.831 arts. 2, 47, 82 (F1); RG 1125 arts. 144-152 NT (F4); NT PFC arts. 11, 13, 14, 45, 56 (F8); Res. UIF 78/2023 (F13) | Alta (necesidad de registro) | ¿Qué figura mínima conviene (PFC vs ALyC aliado)? ¿Cómo opera el art. 146 NT (PFC) con el art. 24 Ley 27.349 para ON no convertibles? |
+| 4 | **Emisión propia** (la plataforma o su grupo emite instrumentos/tokens para financiar proyectos) | Emisor de VN (régimen general o automático bajo/mediano impacto, incl. modalidad FC); si es token no-VN: emisor de activo virtual | Oferta pública sólo con autorización (automática o CNV); prohibición a PFC de presentar proyectos propios/de accionistas (Ley 27.349 art. 31 g; NT art. 14 i) y de ser fiduciaria (art. 14 k); RG 1172 art. 38: PSAV no puede ofrecer AV que sean VN sin autorización; "el mero acto de emitir un Activo Virtual" no es cat. 5 (art. 9) | CNV | Emisora (régimen de oferta pública); tokenización: autorización de representación digital (Tít. XXII) | Emisor no listado como sujeto obligado per se (inferencia); intermediarios sí | Ley 26.831 arts. 3, 80-84 (F1); RG 1125 (F4); RG 1150 arts. 1, 5, 10 Tít. XXII (F5); RG 1172 arts. 9, 38 (F7) | Alta (prohibiciones PFC); Media (resto) | Si el subyacente es un fideicomiso ordinario o contrato de *revenue share* ofrecido en serie al público, ¿es VN y requiere oferta pública? (ver casos de mercado que usan fideicomisos ordinarios — A1) |
+| 5 | **Custodio** (guardar fondos, VN o tokens de inversores) | ADCVN / ALyC / Sociedad Depositaria (VN); **PSAV cat. 4** (activos virtuales); fiduciario financiero o PSP BCRA para fondos en PFC | PFC no puede custodiar fondos ni instrumentos (NT art. 14 d); AP/AAGI no pueden custodiar (Tít. VII); PSAV no puede usar activos de clientes por cuenta propia (RG 1172 art. 20); tokenización: VN depositado en ADCVN, titular registral PSAV/AAPIC/SD/ALyC Integral (Tít. XXII art. 5 b-c) | CNV; BCRA (PSP) | ADCVN, ALyC, PSAV cat. 4, Fiduciario Financiero | Sujeto obligado UIF (art. 20 incs. 4, 7, 13); Res. UIF 49/2024 (PSAV) | RG 1172 arts. 9, 10, 16-20 (F7); RG 1150 art. 5 Tít. XXII (F5); NT PFC arts. 13 o), 14 d) (F8); Res. UIF 49/2024 (F12) | Alta | ¿Qué capital/estructura mínima es realista? PN PSAV cat. 4: US$150.000 (50% si custodia <US$2,5M) — validar costos reales. |
+| 6 | **Intermediación crypto** (compra/venta/intercambio de tokens AV-fiat o AV-AV para clientes; servicios a emisores de tokens) | **PSAV** cat. 1, 2, 3 y/o **5** | Registro previo (art. 1); prohibido operar sin registro (art. 3); no pueden ser PSAV los Agentes Registrados/Mercados/Cámaras (art. 5 a); white paper; tokens <90 días con advertencia; **prohibida oferta pública de AV que sean VN sin autorización** (art. 38); publicidad no engañosa y sin mezclar mercado de capitales salvo Tít. XXII (art. 33) | CNV (registro y supervisión); UIF | Registro PSAV (F14) | Sujeto obligado UIF (Ley 25.246 art. 20 inc. 13); Res. UIF 49/2024 incl. travel rule (art. 37) | Ley 25.246 art. 4 bis (F3); RG 1172 arts. 1-10, 33-38 (F7); Res. UIF 49/2024 (F12) | Alta | ¿Los tokens de proyectos productivos que se piensan listar son VN o AV? (análisis por naturaleza económica, art. 38). |
+| 7 | **Exchange secundario** (inversores revenden entre sí) | VN con oferta pública: Mercado autorizado + AN/ALyC; **ACVN** (poner en relación partes divulgando precios/volúmenes); en PFC: sección secundaria de la **misma** PFC, sólo contado; en tokenización: plataformas de hasta 5 PSAV designados ("ámbito autorizado", art. 39 Tít. XXII); AV no-VN: PSAV cat. 1/2 | "Mercado" y denominaciones son exclusivas (Ley 26.831 art. 28); PFC sólo secundario propio (Ley 27.349 art. 29; NT arts. 52-54); tokenizados: prohibido transferir fuera de PSAV intervinientes o a protocolos descentralizados (Tít. XXII art. 5 f); oferta privada: restricción de reventa 3/6 meses (Tít. XX art. 10) | CNV | Mercado (art. 30 Ley 26.831), AN/ALyC, ACVN, PFC, PSAV según caso | Sujetos obligados UIF; monitoreo de operaciones (Res. UIF 49/2024 art. 34; Res. UIF 78/2023) | Ley 26.831 arts. 2, 28-32 (F1); Ley 27.349 art. 29 (F2); NT PFC arts. 52-53 (F8); RG 1150 arts. 5, 39 Tít. XXII (F5); Tít. VII Cap. VI (F11) | Alta (restricciones) / Media (figura óptima) | ¿Un tablón de intención de compra/venta sin ejecución encuadra como ACVN? ¿Cuál es el camino para liquidez de instrumentos colocados por PFC fuera de la PFC? |
+| 8 | **Referral a autorizado** (derivar inversores/emisores a PFC/ALyC/PSAV con convenio, sin tocar órdenes ni fondos) | Referenciador (RG 1172 art. 35, respecto de PSAV); AP o AAGI (respecto de AN/ALyC); para emisores: servicio comercial de originación (no regulado *a priori*) | Limitarse a redireccionar; identificación del PSAV en toda publicidad; convenio formal; AP: contrato informado por AIF en 2 días; AAGI: revelar retribución al cliente (art. 15) | CNV | Ninguno para referenciador puro a PSAV (inferencia del art. 35: "terceras partes"); AP/AAGI si se promueven VN o se asesora | KYC/AML a cargo del autorizado receptor; posible dependencia de terceros (Res. UIF 49/2024 art. 16) | RG 1172 art. 35 (F7); Tít. VII Cap. IV arts. 2 d), 15 y Cap. V arts. 2-4 (F11) | Media | ¿El fee por éxito pagado por una ALyC o PFC a un no registrado está permitido? ¿Originación de emisores (no inversores) a cambio de comisión requiere registro? |
+
+---
+
+## 4. Lectura conjunta para los modelos M0–M3 del mandato (preliminar, inferencia)
+
+- **M0 (directorio/portal):** viable *en principio* sin registro si no hay invitación a operar VN ni captación (Esc. 1). El riesgo central es que listados con CTA y fees de éxito lo conviertan en promoción/oferta (Esc. 2). **Certeza: Media/Baja.**
+- **M1 (originación + descubrimiento con socios autorizados):** encuadres disponibles en la norma vigente: referenciamiento a PSAV (RG 1172 art. 35), **AP** o **AAGI** con convenios con ALyC/AN (Tít. VII). Para ofertas de PFC, la PFC no puede delegar servicios del contrato con emprendedores ni destacar proyectos (NT PFC art. 14 b y o) — limita co-marketing. **Certeza: Media.**
+- **M2 (plataforma integral con emisión, KYC, custodia):** exige múltiples figuras (PFC o ALyC; PSAV en **todas** las categorías para tokenización CNV; custodia ADCVN/titular registral), y la **PFC no puede inscribirse en otras categorías** (NT PFC art. 9; Matriz RG 1165), ni los Agentes Registrados pueden ser PSAV (RG 1172 art. 5 a) → probablemente requiere grupo con entidades separadas o alianzas. **Certeza: Alta en restricciones; Baja en estructura óptima.**
+- **M3 (secundario):** fuertemente restringido: PFC sólo secundario propio al contado; tokenizados sólo entre PSAV designados; ACVN/Mercado para VN con oferta pública. **Certeza: Alta en restricciones.**
+- El **sandbox de tokenización vence el 31/12/2027** (RG 1150 art. 38 Tít. XXII): cualquier plan que dependa de él tiene horizonte regulatorio acotado. **Certeza: Alta.**
+
+---
+
+## 5. Qué cambió en octubre de 2026
+
+- **RG 1172/2026 (14/10/2026):** sustituye el Cap. III Tít. XIV (PSAV). Novedades relevantes para este proyecto: prohibición expresa de oferta pública de AV que sean VN sin autorización CNV (art. 38); convenios de referenciamiento (art. 35); convenios y delegación con terceros con plena responsabilidad del PSAV (art. 36); restricción de publicidad cruzada PSAV/mercado de capitales (art. 33); puntos de contacto para extranjeros (art. 4). Publicación en B.O. reportada por fuentes secundarias el 15/10/2026 (no verificada en BO). **Certeza: Alta (contenido) / Media (fecha BO y "novedad" vs RG 1058).**
+- El texto consolidado de argentina.gob.ar al 19/10/2026 **no incorpora** RG 1172 (Cap. III Tít. XIV) ni RG 1150 (Tít. XXII). Usar los textos de las RG. **Certeza: Alta.**
+
+---
+
+## 6. Limitaciones de este dictamen
+
+- No se leyó el texto de la Ley 27.739 (no localizado en argentina.gob.ar); se usó la Ley 25.246 consolidada y considerandos de RG.
+- No se consultó el registro de Agentes/PFC (formulario POST, prohibido por protocolo).
+- No se leyeron: Código Penal (intermediación no autorizada), NT Tít. XI (PLA/FT), Tít. VI Cap. IV (colocación), Tít. VII Cap. VII, Tít. XIV Cap. II (Hub), normativa BCRA (PSP), régimen tributario.
+- Vigencia de Res. UIF 49/2024 y 78/2023 posterior a su dictado: no verificada.
+
+**Reitero: no sustituye asesoramiento jurídico; no se concluye habilitación sin abogado argentino.**
